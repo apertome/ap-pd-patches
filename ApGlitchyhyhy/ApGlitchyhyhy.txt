@@ -1,0 +1,9 @@
+param -name stutter -min 0 -max 1000 -default 200;
+param -name interrupt -min 0 -max 1000 -default 200;
+iolayout 2 2;
+code zWrt;
+type effect;
+image ApGlitchyhyhy.png;
+description Infos.txt;
+compatibility 1.0.5;
+midiin true;
