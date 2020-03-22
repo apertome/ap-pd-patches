@@ -1,4 +1,4 @@
-#N canvas 489 81 1611 880 10;
+#N canvas 0 23 1366 632 10;
 #X obj 927 228 loadbang;
 #X obj 927 250 delay 300;
 #X obj 927 272 s initbang;
@@ -10,9 +10,9 @@
 #X obj 567 565 samphold~;
 #X obj 583 709 vd~ \$0-bigbuffer;
 #X obj 619 502 phasor~ 10;
-#X floatatom 723 332 5 0 0 0 - - -;
+#X floatatom 723 332 5 0 0 0 - - -, f 5;
 #X obj 732 386 /;
-#X floatatom 717 413 5 0 0 0 - - -;
+#X floatatom 717 413 5 0 0 0 - - -, f 5;
 #X msg 734 358 1000 \$1;
 #X obj 558 660 *~;
 #X obj 520 246 tgl 13 0 empty empty stutter-ON/OFF 31 4 0 10 -262144
@@ -27,11 +27,11 @@
 #X text 380 383 6 seconds = 6000ms;
 #X obj 583 334 bng 15 250 50 1 \$0-stutter-bang-s \$0-stutter-bang-r
 interrupt 35 4 0 10 -262144 -1 -1;
-#X floatatom 452 499 5 0 9 0 - - -;
+#X floatatom 452 499 5 0 9 0 - - -, f 5;
 #X obj 566 443 phasor~ 0.166667;
-#X floatatom 669 372 5 0 0 0 - - -;
+#X floatatom 669 372 5 0 0 0 - - -, f 5;
 #X msg 716 476 0;
-#X floatatom 698 499 5 0 0 0 - - -;
+#X floatatom 698 499 5 0 0 0 - - -, f 5;
 #X obj 539 481 +~;
 #X msg 652 347 1;
 #X obj 748 445 del;
@@ -64,6 +64,7 @@ interrupt 35 4 0 10 -262144 -1 -1;
 #X text 519 206 w.i.p.;
 #X obj 503 611 1;
 #X connect 0 0 1 0;
+#X connect 0 0 60 0;
 #X connect 1 0 2 0;
 #X connect 3 0 4 0;
 #X connect 3 0 42 0;

@@ -1,4 +1,4 @@
-#N canvas 136 30 1030 887 10;
+#N canvas 136 23 1030 632 10;
 #N canvas 0 50 450 300 sines 0;
 #X obj 355 122 + 50;
 #X obj 355 146 mtof;
@@ -52,7 +52,7 @@
 #X connect 11 0 1 0;
 #X coords 0 -1 1 1 20 20 1 100 100;
 #X restore 233 190 pd noise;
-#X obj 177 74 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 177 74 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 177 119 random 100;
 #X obj 183 141 moses 60;
@@ -71,12 +71,12 @@ sounds to test the machinery, f 20;
 #X obj 173 312 ap_glitchyhyhy;
 #X msg 294 396 open ../../humoresque1.wav;
 #X obj 80 448 dac~;
-#X floatatom 326 261 5 0 0 0 - - -;
 #X obj 263 31 bng 15 250 50 1 empty empty interrupt/glitch 17 7 0 10
 -262144 -1 -1;
 #X obj 200 6 tgl 15 0 empty empty enable_stuttttter 17 7 0 10 -262144
 -1 -1 0 1;
 #X obj 62 157 vu 15 240 empty empty -1 -8 0 10 -66577 -1 1 0;
+#X obj 326 285 0.25;
 #X connect 0 0 15 0;
 #X connect 2 0 6 0;
 #X connect 3 0 4 0;
@@ -92,11 +92,12 @@ sounds to test the machinery, f 20;
 #X connect 11 2 10 0;
 #X connect 11 2 16 0;
 #X connect 14 0 16 0;
+#X connect 14 0 21 0;
 #X connect 15 0 17 0;
 #X connect 15 1 17 1;
 #X connect 16 0 11 0;
 #X connect 16 0 8 0;
-#X connect 18 0 15 2;
-#X connect 18 0 15 4;
-#X connect 19 0 15 3;
-#X connect 20 0 15 1;
+#X connect 18 0 15 3;
+#X connect 19 0 15 1;
+#X connect 21 0 15 2;
+#X connect 21 0 15 4;
