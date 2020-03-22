@@ -16,7 +16,7 @@
 #X msg 734 358 1000 \$1;
 #X obj 558 660 *~;
 #X obj 520 246 tgl 13 0 empty empty stutter-ON/OFF 31 4 0 10 -262144
--1 -1 1 1;
+-1 -1 0 1;
 #X text 706 265 reset;
 #X text 367 335 one cycle per 60 seconds;
 #X text 630 527 retrigger the playback position;
@@ -57,7 +57,7 @@ interrupt 35 4 0 10 -262144 -1 -1;
 #X obj 586 775 *~;
 #X obj 491 775 +~;
 #X obj 519 691 -~;
-#X floatatom 499 655 5 0 0 0 - - -;
+#X floatatom 501 640 5 0 0 0 - - -;
 #X obj 318 226 *~;
 #X obj 439 191 tgl 15 0 empty empty quarantine_buffer 17 7 0 10 -262144
 -1 -1 0 1;
@@ -106,6 +106,7 @@ interrupt 35 4 0 10 -262144 -1 -1;
 #X connect 52 0 54 0;
 #X connect 53 0 54 1;
 #X connect 54 0 49 0;
+#X connect 54 0 50 0;
 #X connect 55 0 52 1;
 #X connect 56 0 55 0;
 #X connect 57 0 39 0;

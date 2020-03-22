@@ -1,4 +1,0 @@
-ApGlitchyhyhy is a buffer/glitch/cd skipping effect
-
-Version: 1.0
-Author: Apertome
