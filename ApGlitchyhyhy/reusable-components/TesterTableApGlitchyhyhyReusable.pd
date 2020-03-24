@@ -1,4 +1,4 @@
-#N canvas 136 23 1030 632 10;
+#N canvas 18 23 1030 632 10;
 #N canvas 0 50 450 300 sines 0;
 #X obj 355 122 + 50;
 #X obj 355 146 mtof;
