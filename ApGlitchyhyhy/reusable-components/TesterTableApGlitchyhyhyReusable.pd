@@ -81,9 +81,12 @@ sounds to test the machinery, f 20;
 #X obj 326 285 0.4;
 #X msg 297 238 1.8;
 #X obj 429 237 hsl 128 15 0 1 0 0 empty empty stiutterr_len -2 -8 0
-10 -262144 -1 -1 6000 1;
+10 -262144 -1 -1 4900 1;
 #X floatatom 483 293 5 0 0 0 - - -, f 5;
 #X text 524 293 sec;
+#X floatatom 347 160 5 0 32 0 bits CRUSH -, f 5;
+#X obj 377 103 bng 15 250 10 0 empty empty bufferfed 17 7 0 10 -262144
+-1 -1;
 #X connect 0 0 20 0;
 #X connect 1 0 20 0;
 #X connect 2 0 6 0;
@@ -112,3 +115,5 @@ sounds to test the machinery, f 20;
 #X connect 23 0 20 2;
 #X connect 24 0 20 2;
 #X connect 24 0 25 0;
+#X connect 27 0 20 5;
+#X connect 28 0 20 6;
